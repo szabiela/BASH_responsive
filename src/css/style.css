@@ -188,6 +188,7 @@ footer {
   top: 540px;
   left: -30%;
   opacity: 0.6;
+  overflow: clip;
 
   img {
     max-height: 230vh;
