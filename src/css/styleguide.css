@@ -1,4 +1,5 @@
 :root { 
+    height: auto;
     --alto: #d9d9d926;
     --black: #000000;
     --celeste: hsl(0, 2%, 80%);
