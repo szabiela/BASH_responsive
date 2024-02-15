@@ -4,6 +4,8 @@ body {
   color: var(--white);
   font-family: var(--font-family-nimbus_sans-regular);
   font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header {
