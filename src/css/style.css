@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color:#060606;
+  background: transparent;
+}
+
+html, 
 body {
   background-color: #181818;
   background: linear-gradient(180deg, #141414 0%, #060606 100%);
@@ -5,8 +17,30 @@ body {
   font-family: var(--font-family-nimbus_sans-regular);
   font-size: 16px;
   max-width: 100%;
+  overflow: hidden;
   overflow-x: hidden;
   overscroll-behavior: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.site-content {
+  position: absolute;
 }
 
 main {
@@ -18,6 +52,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
+  padding: 0em;
 
     ul {
       display: flex;
@@ -89,6 +124,7 @@ section.about {
 
 section.links {
   border: 0;
+  justify-content: space-evenly;
   margin-top: 40%;
   margin-bottom: 30%;
 }
@@ -130,6 +166,40 @@ section.links {
 .event-description {
   font-size: var(--font-size-s);
 }
+
+/* All marquee CSS */
+
+/* This is the spacer?
+.spacer {
+  height: 100px;
+} */
+
+.marquee {
+  position: relative;
+  background: transparent;
+  font-family: var(--font-family-nimbus_sans_extd-bold);
+  color: rgba(var(--celeste), 0.5);
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: var(--font-size-xxxl);
+  overflow: hidden;
+}
+
+.marquee_inner {
+  display: flex;
+  width: fit-content;
+  flex: auto;
+  flex-direction: row;
+}
+
+.marquee_part {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 4px;
+}
+
+/* Back to standard css */
 
 .section-logo img {
   min-width: 156px;
@@ -177,9 +247,11 @@ section.links {
 
 footer {
   display: flex;
-  padding: 3rem 0;
+  padding: 2em;
   margin: 0 1rem;
   justify-content: space-between;
+  bottom: 0;
+  width: 98%;
 }
 
 .blob-bg {
@@ -210,14 +282,37 @@ footer {
   }
 }
 
+#heroVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /* All screens 800px and above */
 @media screen and (min-width: 800px) {
   header{
-    margin: 1rem 3rem;
+    margin: .5rem 1.2rem;
+    padding-top: 0;
+    z-index: 10;
+
+    .a {
+      padding-top: .2rem;
+    }
+  }
+
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
   }
 
   footer {
-    margin: 0 3rem;
+    margin: 0 1.2rem;
   }
 
   section {
@@ -257,6 +352,39 @@ footer {
       margin-left: auto;
       margin-top: 1rem;
     }
+  }
+
+
+  .hero-copy {
+    width: 100%;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding-top: 65vh;
+  }
+
+  .hero-copy h1 {
+    font-size: 8vh;
+    font-family: var(--font-family-nimbus_sans_extd-bold);
+    color: rgba(var(--celeste), 0.5);
+    font-weight: 900;
+  }
+
+  .hero-copy p {
+    font-size: 2vh;
+    font-family: var(--font-family-nimbus_sans-bold);
+    color: var(--celeste);
+    margin: 0.5em 0;
+  }
+
+  #heroVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
   }
 
   .button-group {
@@ -308,6 +436,10 @@ footer {
 
   .single-event.desktop .button {
     margin-top: 0;
+  }
+
+  .marquee {
+    max-width: 98%;
   }
 
   .blob-bg.big {
