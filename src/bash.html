@@ -48,8 +48,10 @@
 
         <div class="site-content">
             <video autoplay muted loop id="heroVideo">
-                <source src="./vid/rave_bash_edit.mp4" type="video/mp4" />
+                <source src="./vid/rave_bash_edit.mp4" class="video-element" />
             </video>
+            <div class="darkend-overlay">
+            </div>
         </div>
 
         <div class="container">
@@ -74,13 +76,9 @@
         </header>
             
         <main>
-
-    
-        
-
-
+           
             <div class="hero-copy">
-                <h1>Listen. Iterate.</h1>
+                <h1>{bash}</h1>
                 <p>records and events for artists and their communities</p>
             </div>
                 
@@ -172,10 +170,6 @@
                     
                 </section>
 
-                <span class="blob-bg small">
-                    <img src="/img/small-blob.png" alt="blog-bg">
-                </span>
-
                 <section class="aside-mobile">
                     <p class="aside-body">
                         Records and events fueled by artists and their community. New rules for a new age. 
@@ -230,6 +224,8 @@
                     <img src="/img/big-blob.png" alt="blog-bg">
                 </span> -->
             </main>
+            <canvas id="draw"></canvas>
+            <script src="./index.js"></script>
 
             <footer> 
                 <img src="img/bash-logo.svg" alt="bash-logo">
@@ -277,8 +273,7 @@
 
 
         </script>
-        <canvas id="draw"></canvas>
-        <script src="/src/index.js"></script>
+        
     </body>
 </html> 
 
