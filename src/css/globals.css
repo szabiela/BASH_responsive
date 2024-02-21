@@ -45,27 +45,4 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Nimbus Sans Extd-Bold";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/6013d70f2a82d9aa4143b889/fonts/urw-nimbussanext-bol.otf")
-    format("opentype");
-}
-
-@font-face {
-  font-family: "Nimbus Sans Extd-Regular";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/6013d70f2a82d9aa4143b889/fonts/urw-nimbussanext-reg.otf")
-    format("opentype");
-}
-
-@font-face {
-  font-family: "Nimbus Sans-Regular";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/5fcf6917a68d037eb34f96cf/files/nimbussanl-reg.otf")
-    format("opentype");
-}
-
-@font-face {
-  font-family: "Nimbus Sans-Bold";
-  src: url("https://anima-uploads.s3.amazonaws.com/projects/5ff6362a36314a09fc9e5383/fonts/nimbussans-bold.otf")
-    format("opentype");
-}
 
