@@ -364,6 +364,8 @@ footer {
 
   #heroVideo {
     position: fixed;
+    align-content: center;
+    align-items: center;
     right: 0;
     bottom: 0;
     min-width: 100vw;
@@ -392,9 +394,31 @@ footer {
 
   section.upcoming {
     border: 0; 
-    margin-top: 40%;
+    margin-top: 15%;
     margin-bottom: 30%;
   }
+
+  section.about {
+    padding-bottom: 0;
+  }
+
+div.posters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: .2rem;
+  height: 30rem;
+  width: auto;
+  padding-top: 0;
+  bottom: 0;
+  
+}
+
+img.bash-poster-gif-2{
+  animation-delay: 1.2;
+}
 
   .single-event.desktop {
       display: flex;
@@ -453,6 +477,10 @@ footer {
     z-index: -1;
     overflow: hidden;*/
     position: fixed;
+    align-items: center;
+    align-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
     top: 0;
     left: 0;
     width: 100%;
