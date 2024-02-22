@@ -176,7 +176,6 @@ section.links {
   align-items: center;
   column-gap: .2rem;
   height: auto;
-  width: 100%;
   max-width: 100vw;
   overflow: hidden;
 
@@ -216,6 +215,7 @@ section.links {
   flex: auto;
   flex-direction: row;
   margin-top: 5rem;
+  
 }
 
 .marquee_part {
@@ -223,6 +223,7 @@ section.links {
   align-items: center;
   flex-shrink: 0;
   padding: 0 4px;
+  
 }
 
 /* Back to standard css */
@@ -365,7 +366,8 @@ canvas {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
+    
     z-index: 1;
     pointer-events: auto !important;
   }
@@ -374,6 +376,7 @@ canvas {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     margin-top: 34vh;
+    margin-bottom: 20%;
     
   }
 
@@ -451,7 +454,7 @@ canvas {
   section.upcoming {
     border: 0;
     margin-top: 15%;
-    margin-bottom: 30%;
+    margin-bottom: 18%;
   }
 
   section.about {
@@ -559,7 +562,8 @@ img.bash-poster-gif-2{
   flex-direction: row;
   gap: 0;
   justify-content: center;
-  margin-top: 0;
+  margin-top: -8vh;
+  margin-bottom: 18vh;
 }
 
 .item {
