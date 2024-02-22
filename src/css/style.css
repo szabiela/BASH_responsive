@@ -38,11 +38,24 @@ header {
     }
 }
 
-.video-bg {
+.video {
   position: fixed;
-  z-index: -2;
   top: 0;
   left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-bg::after {
+  content: "";
+  position: fixed;
+  display: inline-block;
+  background: rgba( 0, 0, 0, 0.6 );
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .title {
@@ -82,6 +95,10 @@ section {
   border-left: 0;
   border-right: 0;
   border-image-source: linear-gradient(to left, transparent, rgba( 255,255,255,0.3 ), transparent);
+}
+
+section > *, footer > * {
+  z-index: 10;
 }
 
 section.upcoming {
@@ -282,21 +299,17 @@ footer {
   }
 }
 
-#heroVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 .hero {
   display: flex;
   align-items: center;
   text-align: center;
   border: 0;
-  z-index: 1;
+  z-index: 10;
   position: inherit;
+  pointer-events: none;
+}
+
+.hero > * {
   pointer-events: none;
 }
 
@@ -318,7 +331,7 @@ canvas {
   header{
     margin: 0;
     padding-top: 1rem 10rem;
-
+    z-index: 2;
 
     .a {
       padding-top: .2rem;
@@ -336,7 +349,7 @@ canvas {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     pointer-events: auto !important;
   }
 
