@@ -88,7 +88,7 @@ section {
   flex-direction: column;
   gap: 0.25rem;
   /* this is where section separation happens */
-  margin: 20vh 1rem;
+  margin: 20vh 1.2rem 1.2rem;
   /* -- */
 }
 
@@ -183,6 +183,10 @@ section.links {
   img {
     display: flex;
     max-width: 25vw;
+
+    .bash-poster-1 {
+      margin-left: 0;
+    }
   }
 }
 
@@ -268,9 +272,10 @@ section.links {
 
 footer {
   display: flex;
-  margin: 0 1rem 1rem;
+  margin: 13rem 1rem 1rem;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .blob-bg {
@@ -360,8 +365,9 @@ canvas {
   }
 
   section {
-    margin-left: auto;
+    margin-left: 1.2rem;
     margin-right: auto;
+    margin-top: 34vh;
     
   }
 
