@@ -366,7 +366,7 @@ canvas {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 110vh;
+    height: 118vh;
     
     z-index: 1;
     pointer-events: auto !important;
@@ -377,6 +377,7 @@ canvas {
     margin-right: 1.2rem;
     margin-top: 34vh;
     margin-bottom: 20%;
+    
     
   }
 
@@ -459,6 +460,7 @@ canvas {
 
   section.about {
     padding-bottom: 0;
+    max-width: 50vw;
   }
 
 img.bash-poster-gif-2{

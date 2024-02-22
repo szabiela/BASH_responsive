@@ -26,6 +26,20 @@ function draw(e) {
     [lastX, lastY] = [e.offsetX, e.offsetY];
 }
 
+function drawInitial() {
+    ctx.beginPath();
+    ctx.moveTo(620, 290); // Start point of the initial line
+    ctx.lineTo(canvas.width - 490, canvas.height - 564);
+    ctx.moveTo(490, 360); // End point of the initial line
+    ctx.lineTo(canvas.width - 850, canvas.height - 527);
+    ctx.moveTo(980, 340); // Start point of the initial line
+    ctx.lineTo(canvas.width - 785, canvas.height - 452);
+    ctx.stroke();
+}
+
+// Call drawInitial to remove part of the background on page load
+drawInitial();
+
 canvas.addEventListener("mousedown", (e) => {
     isDrawing = true;
     [lastX, lastY] = [e.offsetX, e.offsetY];
