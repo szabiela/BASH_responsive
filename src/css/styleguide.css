@@ -1,4 +1,4 @@
-:root { 
+:root {
     height: auto;
     max-width: 100%;
     overflow-x: hidden;
@@ -8,7 +8,7 @@
     --swiss-coffee: #e0d7d7;
     --white: #ffffff;
     --white-2: #ffffffe6;
-   
+
     --font-size-l: 24px;
     --font-size-m: 20px;
     --font-size-s: 16px;
@@ -16,11 +16,11 @@
     --font-size-xs: 15px;
     --font-size-xxl: 36px;
     --font-size-xxxl: 150px;
-   
-    --font-family-nimbus_sans-bold: "Nimbus Sans-Bold", Helvetica;
-    --font-family-nimbus_sans-regular: "Nimbus Sans-Regular", Helvetica;
-    --font-family-nimbus_sans_extd-bold: "Nimbus Sans Extd-Bold", Helvetica;
-    --font-family-nimbus_sans_extd-regular: "Nimbus Sans Extd-Regular", Helvetica;
+
+    --font-family-nimbus_sans-bold: "nimbus-sans", Helvetica;
+    --font-family-nimbus_sans-regular: "nimbus-sans", Helvetica;
+    --font-family-nimbus_sans_extd-bold: "nimbus-sans-extended", Helvetica;
+    --font-family-nimbus_sans_extd-regular: "nimbus-sans-extended", Helvetica;
   }
   .nimbussansextd-regular-normal-swiss-coffee-20px {
     color: var(--swiss-coffee);
@@ -29,7 +29,7 @@
     font-style: normal;
     font-weight: 400;
   }
-  
+
   .nimbussans-regular-normal-white-20px {
     color: var(--white-2);
     font-family: var(--font-family-nimbus_sans-regular);
@@ -37,7 +37,7 @@
     font-style: normal;
     font-weight: 400;
   }
-  
+
   .nimbussansextd-regular-normal-white-20px {
     color: var(--white);
     font-family: var(--font-family-nimbus_sans_extd-regular);
@@ -45,7 +45,7 @@
     font-style: normal;
     font-weight: 400;
   }
-  
+
   .nimbussansextd-regular-normal-swiss-coffee-36px {
     color: var(--swiss-coffee);
     font-family: var(--font-family-nimbus_sans_extd-bold);
