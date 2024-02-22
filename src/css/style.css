@@ -178,6 +178,7 @@ section.links {
   height: auto;
   width: 100%;
   max-width: 100vw;
+  overflow: hidden;
 
   img {
     display: flex;
